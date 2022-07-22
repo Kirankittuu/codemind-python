@@ -1,11 +1,11 @@
-n=int(input())
+n=list(str(input()))
 l=[]
-while n>0:
-    r=n%10
-    n=n//10
-    l.append(r)
-    if(l.count(r)!=1):
-        print('Not Unique Number')
+for i in n:
+    if i not in l:
+        l.append(i)
+    else:
         break
+if l!=n:
+    print('Not Unique Number')
 else:
     print('Unique Number')
