@@ -1,8 +1,8 @@
-x=int(input())
+n=int(input())
 l=[]
-while x>0:
-    r=x%10
-    x=x//10
+while n>0:
+    r=n%10
+    n=n//10
     l.append(r)
     if(l.count(r)!=1):
         print('Not Unique Number')
