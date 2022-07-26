@@ -10,5 +10,4 @@ for i in range(a,b+1):
         if q%r!=0:
             break
     else:
-        print(q,end=" ")
-            
+        print(q,end=' ')
